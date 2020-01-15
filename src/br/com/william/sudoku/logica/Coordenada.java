@@ -1,4 +1,4 @@
-package br.com.com.william.sudoku.logica;
+package br.com.william.sudoku.logica;
 
 public class Coordenada{
 	private int first;
@@ -21,5 +21,10 @@ public class Coordenada{
 	public int getSecond(){
 		return this.second;
 	}
-
+	public boolean equals(Coordenada a){
+		if(this.first==a.getFirst()&&this.second==a.getSecond()){
+			return true;
+		}
+		return false;
+	}
 }
