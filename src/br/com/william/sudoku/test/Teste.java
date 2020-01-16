@@ -1,10 +1,13 @@
 package br.com.william.sudoku.test;
 import  br.com.william.sudoku.logica.Coordenada;
 import  br.com.william.sudoku.logica.Logica;
+import  br.com.william.sudoku.logica.Arrays;
 import java.util.Scanner;
 public class Teste{
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
+		int[] ola=Arrays.sorteiaArray();
+		for(int i:ola)System.out.println(i);
 		String[] tab=new String[9];
 		for (int i=0;i<9 ;i++ ) {
 			tab[i]=sc.next();

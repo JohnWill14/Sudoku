@@ -31,25 +31,35 @@ public class Tabuleiro extends JPanel{
 			int[] inicio={0,3,6,27,30,33,54,57,60};
 			//campos=new JTextField[81];
 			for(int i=0;i<inicio.length;i++){
-				for(int j=inicio[i];j<inicio[i]+3;j++){
+				for(int j=inicio[i];j<inicio[i]+21;j+=9){
 					campos[j]=new JTextField();
-					campos[j+9]=new JTextField();
-					campos[j+18]=new JTextField();
+					campos[j+1]=new JTextField();
+					campos[j+2]=new JTextField();
 
 					campos[j].setPreferredSize(new java.awt.Dimension(30,30));;
-					campos[j+9].setPreferredSize(new java.awt.Dimension(30,30));;
-					campos[j+18].setPreferredSize(new java.awt.Dimension(30,30));;
+					campos[j+1].setPreferredSize(new java.awt.Dimension(30,30));;
+					campos[j+2].setPreferredSize(new java.awt.Dimension(30,30));;
 					
 					campos[j].setHorizontalAlignment(javax.swing.JTextField.CENTER);
-					campos[j+9].setHorizontalAlignment(javax.swing.JTextField.CENTER);
-					campos[j+18].setHorizontalAlignment(javax.swing.JTextField.CENTER);
+					campos[j+1].setHorizontalAlignment(javax.swing.JTextField.CENTER);
+					campos[j+2].setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
 					quadros[i].add(campos[j]);
-					quadros[i].add(campos[j+9]);
-					quadros[i].add(campos[j+18]);
+					quadros[i].add(campos[j+1]);
+					quadros[i].add(campos[j+2]);
 				}
 			}	
 		
 
+	}
+	public void bloqueiaCampo(int[] vetor){
+		for(int i=0;i<vetor.length;i++){
+			int id=(int)(Math.random()*81);
+			campos[id].setText(vetor[i]+"");
+			campos[id].setEnabled(false);
+		}
+	}
+	public JTextField[] getCampos(){
+		return this.campos;
 	}
 }

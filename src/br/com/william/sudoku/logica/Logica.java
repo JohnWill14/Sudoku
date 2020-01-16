@@ -9,7 +9,11 @@ import java.util.List;
 */
 public class Logica{
 	private String[] tabuleiro;
+	public Logica(){
+		super();
+	}
 	public Logica(String[] tabuleiro){
+		this();
 		this.tabuleiro=tabuleiro;
 	}
 	public void setTabuleiro(String[] tab){
