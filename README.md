@@ -21,10 +21,16 @@ $ javac -classpath bin/  -d bin   src/br/com/william/sudoku/gui/*.java src/br/co
 <p>Nada te impede de criar um projeto, em uma IDE, e colar a pasta "br/", mas se quiser utilizar o terminal :  </p>
 
 ```bash
-java -cp bin/ br.com.william.sudoku.Main
+$ java -cp bin/ br.com.william.sudoku.Main
 ```
 
 <p>Onde "bin/" possui as classes do projeto !!!</p>
+
+<p>Você ainda pode utilizar o arquivo "sudoku.jar" para executar através de dois cliques, no windows, e através do seguinte comando, em outros sitemas:</p>
+
+```bash
+$ java -jar sudoku.jar
+```
 
 ## Imagens
 
