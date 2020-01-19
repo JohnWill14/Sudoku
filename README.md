@@ -2,7 +2,7 @@
 
 ## Como foi feito
 
-<p>Na elaboração do projeto utilizei o terminal de comando do Linux, apenas por escolha pessoal, e para criação da interface gráfica utilizei a biblioteca, swing do Java.</p>
+<p>Na elaboração do projeto utilizei o editor de textos sublime text3, apenas por escolha pessoal, e para criação da interface gráfica utilizei a biblioteca, swing do Java.</p>
 <p>Esse projeto além de exigir um conhecimento das biblioteca Java também me exigiu lógica, para que o jogo funcionasse de acordo, e uma melhor organização no que tange a organização do meu projeto, como pacotes, nome de classes, entre outros.</p>
 
 ## Como compilar
