@@ -28,4 +28,4 @@ java -cp bin/ br.com.william.sudoku.Main
 
 ## Imagens
 
-![imagem](image/index.png "Imagem do programa")        ![imagem](image/index2.png "Quando submeto o tabuleiro juga se o tabuleiro foi preenchido de acordo !")
+![imagem](image/index.png "Imagem do programa")        ![imagem](image/index2.png "Quando submeto o tabuleiro o programa julga se o mesmo foi preenchido de acordo !")
